@@ -1,22 +1,24 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { SearchController } from './search.controller';
+
+import { PrismaService } from './prisma.service';
 import { SearchService } from './search.service';
 
 describe('AppController', () => {
-  let appController: SearchController;
+  let searchController: SearchController;
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
       controllers: [SearchController],
-      providers: [SearchService],
+      providers: [SearchService, PrismaService],
     }).compile();
 
-    appController = app.get<SearchController>(SearchController);
+    searchController = app.get<SearchController>(SearchController);
   });
 
   describe('root', () => {
     it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+      expect(searchController.getHello()).toBe('Hello World!');
     });
   });
 });
