@@ -1,0 +1,20 @@
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.image {
+    width: 20%;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 20px;
+}

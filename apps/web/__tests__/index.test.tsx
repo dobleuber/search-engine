@@ -8,6 +8,6 @@ describe('Web', () => {
 
     it('should render a button', () => {
         const {getByText} = render(<Web/>);
-        expect(getByText('hey!')).toBeInTheDocument();
+        expect(getByText('My Search Engine')).toBeInTheDocument();
     })
 })
