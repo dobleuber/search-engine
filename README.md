@@ -67,3 +67,6 @@ yarn run test
 * [x] Change the URL on search event.
 * [ ] Add more tests.
 * [ ] Add jest configurations to config packages.
+
+## Hint
+Try looking for NFT related stuff: NFT, token, collection.
