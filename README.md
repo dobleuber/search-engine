@@ -64,6 +64,6 @@ yarn run test
 
 
 ## TODO
-* [ ] Change the URL on search event.
+* [x] Change the URL on search event.
 * [ ] Add more tests.
 * [ ] Add jest configurations to config packages.
